@@ -23,7 +23,7 @@
     Widget build(BuildContext context) {
       return MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: isViewd ? const HomeScreen() : const SplashScreen(),
+        home: isViewd ? const GetStartedScreen() : const SplashScreen(),
       );
     }
   }
