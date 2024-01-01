@@ -1,0 +1,94 @@
+{
+  "planets": [
+    {
+      "position": "1",
+      "name": "Mercury",
+      "image": "asset/images/mercury.png",
+      "velocity": "47",
+      "distance_km": "91791000",
+      "distance_light_years": "9.78e-12",
+      "temp": "167",
+      "description": "Mercury, the swift messenger of the gods, is the smallest and fastest planet in our solar system. Its surface is a testament to extreme temperature variations, from scorching heat during the day to freezing cold at night. Despite its challenges, Mercury is a fascinating world with a unique and dynamic history."
+    },
+    {
+      "position": "2",
+      "name": "Venus",
+      "image": "asset/images/venus.png",
+      "velocity": "35",
+      "distance_km": "414000000",
+      "distance_light_years": "4.41e-11",
+      "temp": "464",
+      "description": "Venus, the dazzling jewel of the night sky, is often called Earth's twin due to its similar size and mass. However, its thick and toxic atmosphere creates a hostile environment. Venus showcases the beauty of planetary evolution, reminding us of the delicate balance that allows life to thrive on our own planet."
+    },
+    {
+      "position": "3",
+      "name": "Earth",
+      "image": "asset/images/earth.png",
+      "velocity": "29",
+      "distance_km": "0",
+      "distance_light_years": "0",
+      "temp": "15",
+      "description": "Earth, our cherished home, is a haven for life with its diverse ecosystems, vast oceans, and life-sustaining atmosphere. It is the only known celestial body where the dance of life unfolds in myriad forms. Earth's beauty lies not only in its landscapes but in the harmony of nature that has nurtured countless species."
+    },
+    {
+      "position": "4",
+      "name": "Mars",
+      "image": "asset/images/mars.png",
+      "velocity": "24",
+      "distance_km": "783400000",
+      "distance_light_years": "8.35e-11",
+      "temp": "-65",
+      "description": "Mars, the 'Red Planet,' captivates our imagination with its rusty hues and enigmatic landscapes. Despite its harsh conditions, Mars has been a focal point for exploration, inviting us to uncover the mysteries of its past and the potential for life beyond Earth. The spirit of curiosity and discovery defines our quest for knowledge on Mars."
+    },
+    {
+      "position": "5",
+      "name": "Jupiter",
+      "image": "asset/images/jupiter.png",
+      "velocity": "13",
+      "distance_km": "628730000",
+      "distance_light_years": "6.68e-11",
+      "temp": "-110",
+      "description": "Jupiter, the mighty gas giant, commands attention with its immense size and powerful magnetic field. Its swirling cloud bands and iconic Great Red Spot showcase the dynamic forces at play in the Jovian atmosphere. Jupiter, a guardian of the solar system, influences the fate of comets and asteroids, protecting inner planets from potential impacts."
+    },
+    {
+      "position": "6",
+      "name": "Saturn",
+      "image": "asset/images/saturn.png",
+      "velocity": "9",
+      "distance_km": "1275000000",
+      "distance_light_years": "1.36e-10",
+      "temp": "-140",
+      "description": "Saturn, the 'Ringed Wonder,' delights observers with its stunning ring system, a celestial ballet of ice particles and dust. Beyond its rings, Saturn is a gas giant with a captivating set of moons. The beauty of Saturn lies not only in its appearance but in its role as a cosmic storyteller, revealing the complex dance of celestial bodies in our solar system."
+    },
+    {
+      "position": "7",
+      "name": "Uranus",
+      "image": "asset/images/uranus.png",
+      "velocity": "6",
+      "distance_km": "2870000000",
+      "distance_light_years": "3.05e-10",
+      "temp": "-195",
+      "description": "Uranus, the 'Ice Giant,' rolls through space on its side, presenting a unique spectacle in our solar system. This distant planet, with its icy composition and faint ring system, invites us to ponder the dynamic forces that shaped the outer reaches of our cosmic neighborhood. Uranus, a celestial oddity, adds to the rich tapestry of planetary diversity."
+    },
+    {
+      "position": "8",
+      "name": "Neptune",
+      "image": "asset/images/neptune.png",
+      "velocity": "5",
+      "distance_km": "4498000000",
+      "distance_light_years": "4.79e-10",
+      "temp": "-200",
+      "description": "Neptune, the 'Blue Giant,' reigns as the farthest planet in our solar system. Its vibrant blue hue and dynamic atmosphere hint at the mysteries that lie beneath. Neptune's windswept clouds and powerful storms embody the untamed beauty of the outer realms. As a distant sentinel, Neptune completes the ensemble of planets, inviting us to explore the wonders of the cosmic deep."
+    },
+    {
+      "position": "9",
+      "name": "Sun",
+      "image": "asset/images/sun.png",
+      "velocity": "220",
+      "distance_km": "0",
+      "distance_light_years": "0",
+      "temp": "5,600",
+      "description": "The Sun, our radiant star at the heart of the solar system, is the source of life and energy for our planetary family. Its perfect balance sustains the delicate dance of planets and moons. The Sun's luminous presence reminds us of the awe-inspiring forces that govern our celestial neighborhood. As we bask in its warmth, we celebrate the life-giving power that defines our cosmic journey."
+    }
+  ]
+}
