@@ -7,6 +7,8 @@ class allPlanets {
   String description;
   String temprature;
   String lightYears;
+  String distancekm;
+  String Sattelites;
 
   allPlanets({
     required this.name,
@@ -16,6 +18,8 @@ class allPlanets {
     required this.Position,
     required this.velocity,
     required this.temprature,
-    required this.lightYears
+    required this.lightYears,
+    required this.distancekm,
+    required this.Sattelites,
   });
 }

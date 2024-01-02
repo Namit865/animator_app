@@ -50,6 +50,8 @@ class _HomeScreenState extends State<HomeScreen>
               velocity: (e['velocity']),
               temprature: (e['temp'],).toString().replaceAll(',', ''),
               lightYears: e['distance_light_years'],
+              distancekm: e['distance_km'],
+              Sattelites: e['satellite'],
             ),
           )
           .toList();

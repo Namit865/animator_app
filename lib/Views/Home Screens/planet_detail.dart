@@ -52,6 +52,7 @@ class _PlanetDetailState extends State<PlanetDetail>
 
     return Scaffold(
       body: Container(
+        padding: const EdgeInsets.all(10),
         width: double.infinity,
         height: double.infinity,
         decoration: const BoxDecoration(
@@ -86,14 +87,14 @@ class _PlanetDetailState extends State<PlanetDetail>
               ),
               const SizedBox(height: 5),
               Text(
-                "${widget.planets.lightYears} LIGHT YEARS",
+                "${widget.planets.lightYears} LIGHT YEARS / ${widget.planets.distancekm} Kms",
                 style: const TextStyle(
                   color: Colors.white,
                   fontSize: 18,
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              const SizedBox(height: 5),
+              const SizedBox(height: 15),
               Transform.translate(
                 offset: Offset(rocket.value, 0),
                 child: const Icon(
@@ -107,6 +108,10 @@ class _PlanetDetailState extends State<PlanetDetail>
                 width: 400,
                 padding: const EdgeInsets.all(5),
                 decoration: BoxDecoration(
+                  boxShadow: [
+                    const BoxShadow(
+                        spreadRadius: 0, color: Colors.white, blurRadius: 10)
+                  ],
                   color: const Color(0xff0B194B),
                   borderRadius: BorderRadius.circular(30),
                 ),
@@ -129,51 +134,102 @@ class _PlanetDetailState extends State<PlanetDetail>
                   ),
                 ),
               ),
+              const SizedBox(height: 30,),
               Container(
                 height: 70,
                 width: 400,
                 padding: const EdgeInsets.all(5),
                 decoration: BoxDecoration(
+                  boxShadow: [
+                    const BoxShadow(
+                        spreadRadius: 0, color: Colors.white, blurRadius: 10)
+                  ],
                   color: const Color(0xff0B194B),
                   borderRadius: BorderRadius.circular(30),
                 ),
-                child: const ListTile(
-                  leading: Icon(Icons.speed,
-                      color: Colors.white,
-                      size: 35,
-                      shadows: [Shadow(blurRadius: 25)]),
+                child: ListTile(
+                  leading: const Icon(
+                    Icons.satellite_alt_sharp,
+                    color: Colors.white,
+                    size: 35,
+                    shadows: [
+                      Shadow(blurRadius: 25),
+                    ],
+                  ),
+                  title: const Text(
+                    "Sattelites",
+                    style: TextStyle(color: Colors.white, fontSize: 18),
+                  ),
+                  subtitle: Text(
+                    "${widget.planets.Sattelites}",
+                    style: const TextStyle(color: Colors.white, fontSize: 18),
+                  ),
                 ),
               ),
+              const SizedBox(height: 30,),
               Container(
                 height: 70,
                 width: 400,
                 padding: const EdgeInsets.all(5),
                 decoration: BoxDecoration(
+                  boxShadow: [
+                    const BoxShadow(
+                        spreadRadius: 0, color: Colors.white, blurRadius: 10)
+                  ],
                   color: const Color(0xff0B194B),
                   borderRadius: BorderRadius.circular(30),
                 ),
-                child: const ListTile(
-                  leading: Icon(Icons.speed,
-                      color: Colors.white,
-                      size: 35,
-                      shadows: [Shadow(blurRadius: 25)]),
+                child: ListTile(
+                  leading: const Icon(
+                    Icons.speed,
+                    color: Colors.white,
+                    size: 35,
+                    shadows: [
+                      Shadow(blurRadius: 25),
+                    ],
+                  ),
+                  title: const Text(
+                    "Position",
+                    style: TextStyle(color: Colors.white, fontSize: 18),
+                  ),
+                  subtitle: Text(
+                    "${widget.planets.Position}",
+                    style: const TextStyle(color: Colors.white, fontSize: 18),
+                  ),
                 ),
               ),
-              Container(
-                height: 70,
-                width: 400,
-                padding: const EdgeInsets.all(5),
-                decoration: BoxDecoration(
-                  color: const Color(0xff0B194B),
-                  borderRadius: BorderRadius.circular(30),
-                ),
-                child: const ListTile(
-                  leading: Icon(Icons.speed,
-                      color: Colors.white,
-                      size: 35,
-                      shadows: [Shadow(blurRadius: 25)]),
+              const SizedBox(height: 30,),
+              SingleChildScrollView(
+                child: Container(
+                  height: 300,
+                  width: 400,
+                  padding: const EdgeInsets.all(5),
+                  decoration: BoxDecoration(
+                    boxShadow: [
+                      const BoxShadow(
+                          spreadRadius: 0, color: Colors.white, blurRadius: 10)
+                    ],
+                    color: const Color(0xff0B194B),
+                    borderRadius: BorderRadius.circular(30),
+                  ),
+                  child: ListTile(
+                    title: const Text(
+                      "Description",
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold),
+                    ),
+                    subtitle: Text(
+                      widget.planets.description,
+                      style: const TextStyle(color: Colors.white, fontSize: 18),
+                    ),
+                  ),
                 ),
               ),
+              const SizedBox(
+                height: 50,
+              )
             ],
           ),
         ),
