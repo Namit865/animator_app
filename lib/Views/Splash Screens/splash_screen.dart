@@ -1,9 +1,8 @@
 import 'dart:async';
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-
 import '../Home Screens/homescreen.dart';
 import 'get_started.dart';
 
@@ -55,7 +54,7 @@ class _SplashScreenState extends State<SplashScreen> {
         child: Container(
           height: 200,
           width: 200,
-          child: CircularProgressIndicator(),
+          child: Lottie.asset("asset/images/splash.json"),
         ),
       ),
     );
