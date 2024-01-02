@@ -1,50 +1,61 @@
 import 'dart:async';
-import 'package:animator_app/Views/Home%20Screens/homescreen.dart';
+
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+
+import '../Home Screens/homescreen.dart';
+import 'get_started.dart';
 
 class SplashScreen extends StatefulWidget {
-  const SplashScreen({super.key});
+  const SplashScreen({Key? key}) : super(key: key);
 
   @override
   State<SplashScreen> createState() => _SplashScreenState();
 }
 
-
-class _SplashScreenState extends State<SplashScreen>
-    with SingleTickerProviderStateMixin {
-  late Animation<double> animationShape;
-  late Animation<double> animationHeight;
-  late AnimationController animationController;
-
+class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
     Timer(
-      Duration(seconds: 1),
-      () {
-        Navigator.pushReplacement(
-          context,
-          MaterialPageRoute(
-            builder: (context) => const HomeScreen(),
-          ),
-        );
+      Duration(seconds: 5),
+          () {
+        navigate();
       },
-    );
-    animationController = AnimationController(
-      vsync: this,
-      duration: const Duration(seconds: 2),
-      lowerBound: 0,
-      upperBound: 1,
     );
   }
 
+  void navigate() async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    bool isFirstTime = prefs.getBool('isFirstTime') ?? true;
+
+    if (isFirstTime) {
+      prefs.setBool('isFirstTime', false);
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(
+          builder: (context) => GetStartedScreen(),
+        ),
+      );
+    } else {
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(
+          builder: (context) => HomeScreen(),
+        ),
+      );
+    }
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
         child: Container(
-          height: 80,
-          width: 80,
-          color: Colors.black,
+          height: 200,
+          width: 200,
+          child: CircularProgressIndicator(),
         ),
       ),
     );

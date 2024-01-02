@@ -1,9 +1,7 @@
-  import 'package:animator_app/Views/Splash%20Screens/get_started.dart';
   import 'package:animator_app/Views/Splash%20Screens/splash_screen.dart';
   import 'package:flutter/material.dart';
   import 'package:shared_preferences/shared_preferences.dart';
 
-  import 'Views/Home Screens/homescreen.dart';
 
   void main() async {
     WidgetsFlutterBinding.ensureInitialized();
@@ -23,7 +21,7 @@
     Widget build(BuildContext context) {
       return MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: isViewd ? const GetStartedScreen() : const SplashScreen(),
+        home: SplashScreen(),
       );
     }
   }
